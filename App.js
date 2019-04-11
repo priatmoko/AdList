@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet,FlatList, Text, TextInput, View, Button } from 'react-native';
+import { StyleSheet,FlatList, Text, TextInput, View, Button, KeyboardAvoidingView } from 'react-native';
 
 export default class App extends React.Component {
     constructor(props){
@@ -18,18 +18,20 @@ export default class App extends React.Component {
                         // let newData = new Array;
                         // newData.push({key : this.state.textInput});
                         this.setState((prevData)=>({data : 
-                                prevData.data.push({key : (prevData.data.length==0?0:prevData.data.length+1), desc : prevData.textInput})
+                                prevData.data.concat({key : prevData.data.length==0 || prevData.data.length==1 ?prevData.data.length+'':(prevData.data.length+1)+'', desc:prevData.textInput})
                             }));
-                            this.setState((textInput)=>({textInput:''}));    
+                        this.setState((textInput)=>({textInput:''}));    
                     }} />
                 </View>    
                 <View style={styles.listContainer}>
-                    <FlatList 
-                        data={this.state.data}
-                        renderItem = {({item})=>{
-                            return (<Text>{item.desc}</Text>);
-                        }}
-                    />
+                    <KeyboardAvoidingView behavior='padding' enabled>    
+                        <FlatList 
+                            data={this.state.data}
+                            renderItem = {({item})=>{
+                                return (<Text style={styles.item}>{item.desc}</Text>);
+                            }}
+                        />
+                    </KeyboardAvoidingView>    
                 </View>
             </View>
         );
@@ -47,9 +49,9 @@ const styles = StyleSheet.create({
     },
     listContainer : {
         flex : 4,
-        padding : 5,
         backgroundColor : '#cccccc'
     },
     text : {padding : 5, height : 50, fontSize:15},
-    label : {paddingLeft : 5, height : 20, fontSize:18}
+    label : {paddingLeft : 5, height : 20, fontSize:18},
+    item : {padding:10,fontSize:15, backgroundColor: '#ddedff', marginTop:5}
 });
