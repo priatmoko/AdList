@@ -1,6 +1,10 @@
 ## AdList
 <p align="center">
-<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react-native/react-native.png">
+<img width="100" src="https://github.com/priatmoko/image-repo/blob/master/g922.png?raw=true">
 </p>
 
-Creating simple react native CRUD list in expo env
+Run the installation on your smartphone APK File <a href="https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40priatmoko/AdList-e456c02c365f47328381df146217ac55-signed.apk" target="_blank">download</a>
+
+Creating simple application for android device. It is create with react native expo.
+To run this code in your workspace following the step. <br/>
+Here are the steps :
