@@ -14,7 +14,7 @@ export default class App extends React.Component {
                         <Text style={styles.label}>AdList</Text>
                     </View>
                     <TextInput placeholder="Type list here" style={styles.text} onChangeText={(textInput)=>{this.setState({textInput})}} value={this.state.textInput}/>
-                    <Button title="Add" onPress={()=>{
+                    <Button color="#fc2020" title="Add" onPress={()=>{
                         // let newData = new Array;
                         // newData.push({key : this.state.textInput});
                         this.setState((prevData)=>({data : 
@@ -53,5 +53,5 @@ const styles = StyleSheet.create({
     },
     text : {padding : 5, height : 50, fontSize:15},
     label : {paddingLeft : 5, height : 20, fontSize:18},
-    item : {padding:10,fontSize:15, backgroundColor: '#ddedff', marginTop:5}
+    item : {padding:10,fontSize:15, backgroundColor: '#f9dbdb', marginTop:5}
 });

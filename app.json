@@ -1,6 +1,7 @@
 {
   "expo": {
-    "name": "Simple CRUD React Native",
+    "name": "AdList",
+    "description" : "Simple FlatList React Native",
     "slug": "AdList",
     "privacy": "public",
     "sdkVersion": "32.0.0",
@@ -24,6 +25,9 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+        "package": "com.masterpis.AdList"
     }
   }
 }
