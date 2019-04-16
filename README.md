@@ -1,6 +1,6 @@
 ## AdList
 <p align="center">
-<img src="https://github.com/priatmoko/image-repo/blob/master/g2166.png?raw=true">
+<img src="https://github.com/priatmoko/image-repo/blob/master/g2166.png?raw=true" width="500px">
 </p>
 
 Run the installation on your smartphone APK File <a href="https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40priatmoko/AdList-315675efb18241b68a5582fec92f5ed9-signed.apk" target="_blank">download</a>
